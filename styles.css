@@ -1,0 +1,40 @@
+.title, .confirmation {
+    text-align: center;
+}
+
+.reset {
+  width: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .hook-form, .confirmation, .json {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hook-form, .confirmation, .json {
+    width: 50%;
+    margin: auto;
+  }
+}
+.json {
+   verflow: scroll;
+}
+
+.hljs {
+  background: #F2F3F5;
+}
+
+.hljs-attr {
+  color: #9445B0;
+}
+
+.hljs-sting {
+  color: #A2162D;
+}
+
+.hljs-literal {
+  color: #007b7b;
+}
