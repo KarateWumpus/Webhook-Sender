@@ -15,12 +15,11 @@
 
 @media screen and (max-width: 800px) {
   .hook-form, .confirmation, .json {
-    width: 50%;
     margin: auto;
   }
 }
 .json {
-   verflow: scroll;
+   overflow: scroll;
 }
 
 .hljs {
