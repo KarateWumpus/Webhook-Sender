@@ -1,5 +1,9 @@
 .title, .confirmation {
-    text-align: center;
+  text-align: center;
+	font-size: 4rem;
+	line-height: 1.6;
+	letter-spacing: 0.05rem;
+	font-weight: 500;
 }
 
 .reset {
@@ -19,7 +23,7 @@
   }
 }
 .json {
-   overflow: scroll;
+  overflow: scroll;
 }
 
 .hljs {
