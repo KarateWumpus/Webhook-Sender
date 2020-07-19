@@ -26,6 +26,9 @@ form.addEventListener('submit', (event) => {
     } else if (checkPathname[1] + checkPathname[2] !== 'apiwebhooks') {
         confirmation.innerHTML = '<h3>Error: Not a valid webhook URL</h3>'
         return
+    } else if (!Number.isInteger(+checkPathname[3])) {
+        confirmation.innerHTML = '<h3>Error: Not a valid webhook URL</h3>'
+        return
     }
     fetch(API_URL + '?wait=1', {
         method: 'POST',
