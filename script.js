@@ -16,7 +16,7 @@ form.addEventListener('submit', (event) => {
         avatar_url,
         content
     }
-    const allowedURLS = ['canary.discord.com', 'ptb.discord.com', 'discord.com']
+    const allowedURLS = ['canary.discord.com', 'ptb.discord.com', 'discord.com', 'canary.discordapp.com', 'ptb.discordapp.com', 'discordapp.com']
     const checkURL = new URL(API_URL)
     if (!allowedURLS.includes(checkURL.host)) {
         confirmation.innerHTML = `<h3>Error: Not a valid webhook URL</h3>`
