@@ -6,6 +6,10 @@
 	font-weight: 500;
 }
 
+textarea {
+  resize: vertical;
+}
+
 .reset {
   width: auto;
 }

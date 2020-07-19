@@ -5,6 +5,7 @@ textArea.style.visibility = 'hidden'
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
+    textArea.style.visibility = 'hidden'
     const formData = new FormData(form)
     const username = formData.get('username')
     const avatar_url = formData.get('avatar')
@@ -48,6 +49,10 @@ form.addEventListener('submit', (event) => {
                             }
                         } else {
                             confirmation.innerHTML = `<h3>Error ${response.status}</h3>`
+                            const str = JSON.stringify(obj, null, 4);
+                            textArea.style.visibility = 'visible'
+                            textArea.innerHTML = str
+                            hljs.highlightBlock(textArea)
                         }
                     })
             }
