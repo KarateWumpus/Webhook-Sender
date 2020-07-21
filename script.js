@@ -1,5 +1,7 @@
 const form = document.querySelector('.hook-form')
 const textArea = document.querySelector('.json')
+const themeButton = document.querySelector('.themeButton')
+const themeSwitch = document.querySelector('.themeSwitch')
 const confirmation = document.querySelector('.confirmation')
 const allowedURLS = ['canary.discord.com', 'ptb.discord.com', 'discord.com', 'canary.discordapp.com', 'ptb.discordapp.com', 'discordapp.com']
 textArea.style.visibility = 'hidden'
@@ -41,7 +43,7 @@ form.addEventListener('submit', (event) => {
             const obj = await response.json()
             if (response.status === 200) {
                 const str = JSON.stringify(obj, null, 4)
-                confirmation.innerHTML = '<h3>Success</h3>'
+                confirmation.innerHTML = '<h3 class="title">Success</h3>'
                 textArea.style.visibility = 'visible'
                 textArea.innerHTML = str
                 hljs.highlightBlock(textArea)
@@ -56,4 +58,14 @@ form.addEventListener('submit', (event) => {
                 hljs.highlightBlock(textArea)
             }
         })
+})
+
+themeButton.addEventListener('click', (event) => {
+    if(themeSwitch.href === `${window.location}dark.css`) {
+        themeSwitch.href = 'light.css'
+        themeButton.src = 'images/moon.png'
+    } else {
+        themeSwitch.href = 'dark.css'
+        themeButton.src = 'images/sun.png'
+    }
 })

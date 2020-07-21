@@ -7,10 +7,11 @@
   <meta name="description" content="Send messages via Discord webhooks">
   <meta name="theme-color" content="#7289da">
   <title>Discord Webhook Sender</title>
+  <link rel="stylesheet" class="themeSwitch" href="dark.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
   <link rel="stylesheet" href="https://ez-css.now.sh">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -18,13 +19,17 @@
   </header>
   <main>
     <form class="hook-form">
-      <input class="u-full-width" type="text" size="20" id="username" name="username" placeholder="Username"><br>
-      <input class="u-full-width" type="url" size="20" id="avatar" name="avatar" placeholder="Avatar URL"><br>
-      <textarea class="u-full-width" type="text" size="20" id="content" required name="content" placeholder="Message"></textarea><br>
-      <input class="u-full-width" type="url" size="20" id="webhook_url" name="webhook_url" placeholder="Webhook URL"><br>
-      <input type="checkbox" id="resetForm" name="resetForm" class="reset" checked>Clear all fields when sending</input>
-      <input class="button-primary" type="submit" value="Send">
+      <input class="u-full-width" type="text" id="username" name="username" placeholder="Username"><br>
+      <input class="u-full-width" type="url" id="avatar" name="avatar" placeholder="Avatar URL"><br>
+      <textarea class="u-full-width" type="text" id="content" required name="content" placeholder="Message"></textarea><br>
+      <input class="u-full-width" type="url" id="webhook_url" name="webhook_url" placeholder="Webhook URL"><br>
+      <label class="switch">
+        <input type="checkbox" id="resetForm" name="resetForm" class="reset" checked><span class="slider round"></span></input>
+      </label>
+      <span>Clear all fields when sending</span><br>
+      <button type="submit" class="button-primary">Send</button>
     </form>
+    <img src="images/sun.png" class="themeButton">
     <p class="confirmation"></p>
     <pre><code class="json"></code></pre>
   </main>

@@ -1,0 +1,42 @@
+input[type=text], textarea, input[type=url] {
+    background-color: #ebedef !important;
+    border: none !important;
+}
+
+input[type="checkbox"] {
+    cursor: pointer !important;
+}
+
+body {
+    background-color: #e3e5e8;
+}
+
+input[type=text], textarea, input[type=url] {
+    color: #2e3338 !important;
+}
+
+.title, span {
+    color: #060607 !important;
+}
+
+.hljs {
+    background: #f2f3f5 !important;
+    border: 1px solid #e3e5e8 !important;
+    color: #b9bbbe !important;
+}
+  
+.hljs-attr {
+    color: #B58900 !important;
+}
+  
+.hljs-literal, .hljs-string, .hljs-number {
+    color: #2AA198 !important;
+}
+
+.button-primary {
+    background-color: #7289DA !important;
+    border: none !important;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+}
