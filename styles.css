@@ -1,21 +1,11 @@
 .title, .confirmation {
   text-align: center;
-	font-size: 4rem;
-	line-height: 1.6;
-	letter-spacing: 0.05rem;
-	font-weight: 500;
-}
-
-.hook-form {
-  text-align: center;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.reset {
-  width: auto;
+	font-size: 40px;
+	line-height: 1.25;
+	letter-spacing: -.1rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -30,27 +20,15 @@ textarea {
     margin: auto;
   }
 }
-.json {
-  overflow: auto;
-}
 
-.hljs {
-  background: #F2F3F5;
-}
+.json {overflow: auto;}
+textarea {resize: vertical;}
+.reset {width: auto;}
+.hljs {background: #F2F3F5;}
+.hljs-attr {color: #B58900;}
+.hljs-literal, .hljs-string, .hljs-number {color: #2AA198;}
+.hook-form {text-align: center;}
 
-.hljs-attr {
-  color: #9445B0;
-}
-
-.hljs-string, .hljs-number {
-  color: #A2162D;
-}
-
-.hljs-literal {
-  color: #007b7b;
-}
-
-/* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
@@ -58,14 +36,12 @@ textarea {
   height: 21px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
