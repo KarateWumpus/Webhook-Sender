@@ -8,6 +8,17 @@
   margin-bottom: 2rem;
 }
 
+input[type=color] {
+  background: none;
+  border: none;
+  height: 33px;
+  margin-top: -10px;
+}
+
+.embed-value-title {
+  font-size: 25px;
+}
+
 @media screen and (min-width: 800px) {
   .hook-form, .confirmation, .json {
     width: 35%;
@@ -27,7 +38,8 @@ textarea {resize: vertical;}
 .hljs {background: #F2F3F5;}
 .hljs-attr {color: #B58900;}
 .hljs-literal, .hljs-string, .hljs-number {color: #2AA198;}
-.hook-form {text-align: center;}
+.hook-form, .embed {text-align: center;}
+.embed {margin: auto;}
 
 .switch {
   position: relative;
@@ -89,4 +101,12 @@ input:checked + .slider:before {
   top: 5px;
   right: 5px;
   width: 55px;
+}
+
+button {
+  position: static;
+}
+
+input[type="checkbox"] {
+  cursor: pointer !important;
 }

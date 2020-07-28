@@ -4,10 +4,6 @@ input[type=text], textarea, input[type=url] {
     color: white !important;
 }
 
-input[type="checkbox"] {
-    cursor: pointer !important;
-}
-
 body {
     background-color: #36393f;
 }

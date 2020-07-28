@@ -23,10 +23,29 @@
       <input class="u-full-width" type="url" id="avatar" name="avatar" placeholder="Avatar URL"><br>
       <textarea class="u-full-width" type="text" id="content" required name="content" placeholder="Message"></textarea><br>
       <input class="u-full-width" type="url" id="webhook_url" name="webhook_url" placeholder="Webhook URL"><br>
+      <div class="embed" hidden>
+        <h4 class="title">Embed</h4>
+        <input class="u-full-width" type="text" id="embed-title" name="title" placeholder="Title"><br>
+        <input class="u-full-width" type="url" id="embed-title-url" name="url" placeholder="Title URL"><br>
+        <textarea class="u-full-width" type="text" id="embed-description" name="description" placeholder="Description"></textarea>
+        <input class="u-full-width" type="color" id="embed-color" name="color"><br>
+        <input class="u-full-width" type="text" id="embed-author" name="author" placeholder="Author"><br>
+        <input class="u-full-width" type="url" id="embed-author-url" name="author_url" placeholder="Author URL"><br>
+        <input class="u-full-width" type="url" id="embed-author-icon" name="author_icon" placeholder="Author Icon URL"><br>
+        <input class="u-full-width" type="text" id="embed-footer" name="footer" placeholder="Footer"><br>
+        <input class="u-full-width" type="url" id="embed-footer-icon" name="footer_icon" placeholder="Footer Icon URL"><br>
+        <input class="u-full-width" type="url" id="embed-image-url" name="image_url" placeholder="Image URL"><br>
+        <input class="u-full-width" type="url" id="embed-thumbnail-url" name="thumbnail_url" placeholder="Thumbnail URL"><br>
+        <span class="embed-value-title">The ability to add fields is coming soon</span>
+      </div>
       <label class="switch">
         <input type="checkbox" id="resetForm" name="resetForm" class="reset" checked><span class="slider round"></span></input>
       </label>
       <span>Clear all fields when sending</span><br>
+      <label class="switch">
+        <input type="checkbox" id="addEmbed" name="addEmbed" class="addEmbed"><span class="slider round"></span></input>
+      </label>
+      <span>Add embed</span><br>
       <button type="submit" class="button-primary">Send</button>
     </form>
     <img src="images/sun.png" class="themeButton">
